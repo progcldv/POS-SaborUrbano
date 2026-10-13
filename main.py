@@ -1,4 +1,8 @@
-# Edicion de codigo de prueba
+'''
+Proyecto PBD A8.1 Práctica Proyecto Básico Python
+El Food Truck "Sabor Urbano" necesita automatizar el control de sus ventas diarias. 
+Tu misión es desarrollar un programa en Python que registre cada venta del día, aplique reglas de cobro y entregue un balance detallado al finalizar la jornada.
+'''
 
 monto_total_diario = 0.0
 caja_abierta = True
