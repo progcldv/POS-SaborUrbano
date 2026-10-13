@@ -55,4 +55,7 @@ while caja_abierta:
     elif opcion == "3":
         print("CERRAR CAJA Y SALIR")
         caja_abierta = False
+    else:
+        print("Opcion No valida, por favor ingrese 1, 2 o 3.")
     # fin-if
+#fin-while
