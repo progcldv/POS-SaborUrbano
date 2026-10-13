@@ -1,0 +1,50 @@
+martes 29/09==========
+
+si opcion == 1:
+	escribir "Registro venta"
+	subtotal_cliente = 0
+	registro_venta = True
+	
+	Mientras registro_venta entonces
+	  Escribir "ingrese precio"
+	  leer entrada
+	  
+		si entrada == "0" or entrada == "fin" entonces
+	    	registro_venta = False
+	  	sino
+	    	precio = float(entrada)
+	    	subtotal_cliente = subtotal_cliente + precio.
+	  	fin_si		
+	fin_mientras
+	Escribir "el sub total del cliente es ", subtotal_cliente
+
+martes 06/10 Paso 3 ================
+
+monto_iva = subtotal_cliente * 0.19
+total_iva_cliente = subtotal_cliente + monto_iva
+Escribir "Iva:", monto_iva, " subtotal: ", subtotal_cliente, "Total IVA: ", total_iva_cliente
+
+escribir "Ingrese Metodo de pago:"
+Escribir "1. Efectivo, 2. Tarjeta"
+leer metodo_pago
+
+descuento = 0
+Si metodo_pago == 1 entonces
+   descuento = total_iva_cliente * 0.05
+   Escribir "descuento: ", descuento
+Fin_Si
+total_final_cliente = total_iva_cliente - descuento
+Escribir "Total Final Cliente", total_final_cliente
+
+Si total_final_cliente > 15000 entonces
+	Escribir "Venta alta"
+Sino
+	Escribir "Venta habitual"
+FinSi
+
+total_acumulado_diario = total_acumulado_diario + total_final_cliente
+
+	
+
+
+
